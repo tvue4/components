@@ -6,7 +6,19 @@
 >
    
    <label>
-    <input type="checkbox">
+    <input 
+    type="checkbox"
+    [(ngModel)]="pt.checked"
+    />
     {{pt.name}} ({{pt.price | currency:'USD':true}})
    </label>
 </div>
+<br/>
+<button
+    (click)="calculateTotal()"
+>
+    Calculate Total 
+</button>
+<h3>
+    Total: {{ totalPrice | currency:'USD':true}}
+</h3>
