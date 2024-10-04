@@ -13,3 +13,12 @@
 </label>
     
 </div>
+<button
+    (click)="calculateTotal()"
+>
+    Calculate Total
+</button>
+<br>
+<h3>
+    Total: {{ totalPrice | currency}}
+</h3>
