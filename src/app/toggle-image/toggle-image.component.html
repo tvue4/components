@@ -8,10 +8,23 @@
             
                 <h4>
                 {{ pt.name }}
+                <!-- <mat-checkbox 
+                [(ngModel)]="pt.checked">
+                </mat-checkbox> -->
+                <mat-icon
+                [(ngModel)]="pt.checked">
+                
+                keyboard_arrow_down
+                </mat-icon>
                 </h4>
+               
+              
 
-                <img src="{{pt.image}}">              
                 <!-- <img id="toppImg" src=""> -->
-
+                <mat-grid-list cols="2" rowHeight="2:1">
+                    <mat-grid-tile>      
+                        <img id="toppImg" src="{{pt.image}}">              
+                    </mat-grid-tile>
+                  </mat-grid-list>
         </div>
 </mat-card>

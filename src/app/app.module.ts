@@ -12,6 +12,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ToggleImageComponent } from './toggle-image/toggle-image.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+
+
 
 @NgModule({
   declarations: [
@@ -25,6 +29,8 @@ import { ToggleImageComponent } from './toggle-image/toggle-image.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatGridListModule
+    , MatIconModule
   ],
   providers: [
     provideAnimationsAsync()
