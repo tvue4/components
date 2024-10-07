@@ -5,12 +5,13 @@
     <div
             *ngFor="let pt of ToppingsImage"
         >
-            <label>
-                <mat-checkbox 
-                    [(ngModel)]="pt.checked"
-                >
-                </mat-checkbox>
+            
+                <h4>
                 {{ pt.name }}
-            </label>
+                </h4>
+
+<img src="{{pt.image}}">              
+                <img id="toppImg" src="">
+
         </div>
 </mat-card>
