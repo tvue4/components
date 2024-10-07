@@ -31,16 +31,8 @@ export class ToggleImageComponent implements OnInit{
       })
     );
 
-    // const imageURL = '../assets/img/pizzaOlives.png'
     console.log(this.ToppingsImage);
   }
-
-
-  // showImage = () => {
-  //   const image = document.getElementById("toppImg") as HTMLImageElement;
-  //   if (image) {
-  //     image.src = "/src/assets/img/pizzaOlives.png";
-  //   }  }
   
 
 }
