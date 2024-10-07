@@ -7,19 +7,22 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 @NgModule({
-  declarations: [
-    AppComponent
-    , PizzaToppingsComponent
-  ],
+  declarations: [AppComponent, PizzaToppingsComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    , FormsModule
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
