@@ -11,11 +11,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ToggleImageComponent } from './toggle-image/toggle-image.component';
 
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent
+    , PizzaToppingsComponent, ToggleImageComponent
   ],
   imports: [
     BrowserModule,
