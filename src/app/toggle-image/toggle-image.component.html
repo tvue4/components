@@ -8,23 +8,18 @@
             
                 <h4>
                 {{ pt.name }}
-                <!-- <mat-checkbox 
-                [(ngModel)]="pt.checked">
-                </mat-checkbox> -->
-                <mat-icon
-                [(ngModel)]="pt.checked">
+                <mat-checkbox [(ngModel)]="pt.checked">
+                 
+                </mat-checkbox>
                 
-                keyboard_arrow_down
-                </mat-icon>
                 </h4>
                
-              
-
-                <!-- <img id="toppImg" src=""> -->
                 <mat-grid-list cols="2" rowHeight="2:1">
-                    <mat-grid-tile>      
-                        <img id="toppImg" src="{{pt.image}}">              
-                    </mat-grid-tile>
-                  </mat-grid-list>
+                <mat-grid-tile *ngIf="pt.checked">  <img id="toppImg" src="{{ pt.image }}">
+                </mat-grid-tile>
+                </mat-grid-list>
+
+                <!--Reseached *ngIf (it works as a show details button, if the boolean expression is true, it renders the element it has inside.)-->
         </div>
+
 </mat-card>
