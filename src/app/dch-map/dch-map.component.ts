@@ -39,7 +39,15 @@ export class DchMapComponent implements AfterViewInit {
           const lon = place.lon;
           const name = place.tags.name; 
 
-          L.marker([lat, lon])
+          let pizzaIcon = L.icon({
+            iconUrl: 'pizzaIcon.png',
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+            popupAnchor: [0, 20],
+        });
+
+
+          L.marker([lat, lon], {icon: pizzaIcon})
             .addTo(this.map)
             .bindPopup(`<b>${name}</b>`);
         });
