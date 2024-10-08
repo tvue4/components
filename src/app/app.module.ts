@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DchMapComponent } from './dch-map/dch-map.component';
+import { LeafletModule } from '@bluehalo/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DchMapComponent } from './dch-map/dch-map.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , LeafletModule
   ],
   providers: [
     provideAnimationsAsync()
