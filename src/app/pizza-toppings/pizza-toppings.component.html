@@ -10,6 +10,10 @@
       </label>
     </div>
 
+    <button mat-mini-fab (click)="checkAll()">All</button>
+    &nbsp;
+    <button mat-mini-fab color="secondary" (click)="uncheckAll()">None</button>
+
     <br />
 
     <h3>Total: {{ totalPrice | currency }}</h3>
