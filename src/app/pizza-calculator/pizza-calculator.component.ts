@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class PizzaCalculatorComponent {
   numberOfPeople: number = 1;
   slicesPerPizza: number = 8; // Assuming each pizza has 8 slices
-  slicesPerPerson: number = 2;
+  slicesPerPerson: number = 3; // Adjust this based on how many slices each person eats
+
+  getTotalPizzas(): number {
+    const totalSlicesNeeded = this.numberOfPeople * this.slicesPerPerson;
+    return Math.ceil(totalSlicesNeeded / this.slicesPerPizza);
+  }
 }
