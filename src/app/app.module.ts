@@ -14,6 +14,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DmwAdditionComponent } from './dmw-addition/dmw-addition.component';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatFormField } from '@angular/material/input';
+
 @NgModule({
   declarations: [AppComponent, PizzaToppingsComponent, DmwAdditionComponent],
   imports: [
@@ -24,6 +27,8 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
     MatButtonModule,
     MatCheckboxModule,
     MatProgressSpinner,
+    MatInputModule,
+    MatFormField,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
