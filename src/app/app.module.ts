@@ -12,23 +12,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DmwAdditionComponent } from './dmw-addition/dmw-addition.component';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 @NgModule({
-  declarations: [
-    AppComponent
-    , PizzaToppingsComponent, DmwAdditionComponent
-  ],
+  declarations: [AppComponent, PizzaToppingsComponent, DmwAdditionComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    , FormsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatCheckboxModule
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatProgressSpinner,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
