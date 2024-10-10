@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './pizza-calculator.component.css'
 })
 export class PizzaCalculatorComponent {
-
+  numberOfPeople: number = 1;
+  slicesPerPizza: number = 8; // Assuming each pizza has 8 slices
+  slicesPerPerson: number = 2;
 }
