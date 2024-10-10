@@ -14,7 +14,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
 @NgModule({
   declarations: [AppComponent, PizzaToppingsComponent, SfeAdditionComponent],
   imports: [
