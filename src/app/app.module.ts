@@ -11,11 +11,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent
+    , PizzaToppingsComponent, SfeAdditionComponent
   ],
   imports: [
     BrowserModule,
