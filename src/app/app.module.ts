@@ -12,6 +12,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TsAdditionComponent } from './ts-addition/ts-addition.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+
+
 
 @NgModule({
   declarations: [
@@ -19,12 +25,16 @@ import { TsAdditionComponent } from './ts-addition/ts-addition.component';
     , PizzaToppingsComponent, TsAdditionComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
+    , AppRoutingModule
     , FormsModule
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatDatepickerModule
+    , MatInputModule
+    , MatFormFieldModule
+    , MatNativeDateModule
   ],
   providers: [
     provideAnimationsAsync()
