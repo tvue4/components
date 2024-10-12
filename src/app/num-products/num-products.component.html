@@ -1,8 +1,36 @@
 <mat-card>
     <mat-card-title>
-        Jemal products of numbers
+      Jemal products of numbers
     </mat-card-title>
     <mat-card-content>
-        
+      <mat-form-field>
+        <mat-label>First number</mat-label>
+        <input
+          matInput 
+          type="number"
+          [(ngModel)]="firstnumber"
+        />
+      </mat-form-field>
+      <br><br>
+      X
+      <br>
+      <mat-form-field>
+        <mat-label>Second number</mat-label>
+        <input
+          matInput 
+          type="number"
+          [(ngModel)]="secondnumber"
+        />
+      </mat-form-field>
+      <br>
+      <button 
+        mat-flat-button
+        (click)="multiply()"
+      >
+        Calculate
+      </button>
+      <br><br>
+      <strong>Result: {{ result }}</strong>  <!-- Binding result here -->
     </mat-card-content>
-</mat-card>
+  </mat-card>
+  
