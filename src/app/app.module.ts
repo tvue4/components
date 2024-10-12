@@ -12,6 +12,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NumProductsComponent } from './num-products/num-products.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { NumProductsComponent } from './num-products/num-products.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    ,MatInputModule
+    ,MatFormFieldModule
   ],
   providers: [
     provideAnimationsAsync()
