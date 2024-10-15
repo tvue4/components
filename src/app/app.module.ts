@@ -15,12 +15,13 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { CommentBoxComponent } from './comment-box/comment-box.component';
 
 @NgModule({
   declarations: [
     AppComponent
     , PizzaToppingsComponent
-    , TjsMultiplicationComponent
+    , TjsMultiplicationComponent, CommentBoxComponent
   ],
   imports: [
     BrowserModule,
