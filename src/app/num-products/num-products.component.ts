@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class NumProductsComponent {
   firstnumber = 2;
   secondnumber = 3;
-  result = 6;
-  multiply=() => this.result = this.firstnumber * this.secondnumber;
-
+  thirdnumber = 4;  
+  result = 24;
+  
+  multiply = () => this.result = this.firstnumber * this.secondnumber * this.thirdnumber;
 }

@@ -22,6 +22,17 @@
           [(ngModel)]="secondnumber"
         />
       </mat-form-field>
+      <br><br>
+      X
+      <br>
+      <mat-form-field>
+        <mat-label>Third number</mat-label>
+        <input
+          matInput 
+          type="number"
+          [(ngModel)]="thirdnumber"
+        />
+      </mat-form-field>
       <br>
       <button 
         mat-flat-button
@@ -30,7 +41,7 @@
         Calculate
       </button>
       <br><br>
-      <strong>Result: {{ result }}</strong>  <!-- Binding result here -->
+      <strong>Result: {{ result }}</strong>  
     </mat-card-content>
   </mat-card>
   
