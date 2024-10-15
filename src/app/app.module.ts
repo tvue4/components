@@ -14,8 +14,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+
 @NgModule({
-  declarations: [AppComponent, PizzaToppingsComponent, SfeAdditionComponent],
+  declarations: [AppComponent, PizzaToppingsComponent, SfeAdditionComponent, TjsMultiplicationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
