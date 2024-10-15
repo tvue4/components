@@ -15,14 +15,15 @@ import { DchMapComponent } from './dch-map/dch-map.component';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent
     , PizzaToppingsComponent
     , TjsMultiplicationComponent
+    , SfeAdditionComponent
     , DchMapComponent
   ],
   imports: [
@@ -36,9 +37,7 @@ import { MatInputModule } from '@angular/material/input';
     , MatFormFieldModule
     , MatInputModule
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
