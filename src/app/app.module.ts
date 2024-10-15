@@ -11,14 +11,17 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
-import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent
     , PizzaToppingsComponent
+    , TjsMultiplicationComponent
     , TjsAdditionComponent
   ],
   imports: [
@@ -28,8 +31,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatInputModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [
     provideAnimationsAsync()
