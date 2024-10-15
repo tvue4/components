@@ -14,10 +14,16 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DchMapComponent } from './dch-map/dch-map.component';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
 
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent, DchMapComponent
+    , PizzaToppingsComponent
+    , TjsMultiplicationComponent
+    , DchMapComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,8 @@ import { LeafletModule } from '@bluehalo/ngx-leaflet';
     , MatButtonModule
     , MatCheckboxModule
     , LeafletModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [
     provideAnimationsAsync()
