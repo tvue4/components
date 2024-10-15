@@ -11,9 +11,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { MatInputModule } from '@angular/material/input';
 import { CommentBoxComponent } from './comment-box/comment-box.component';
 
@@ -22,20 +21,25 @@ import { CommentBoxComponent } from './comment-box/comment-box.component';
     AppComponent
     , PizzaToppingsComponent
     , TjsMultiplicationComponent, CommentBoxComponent
+import { MatFormFieldModule } from '@angular/material/form-field';
+@NgModule({
+  declarations: [
+    AppComponent,
+    PizzaToppingsComponent,
+    TjsMultiplicationComponent,
+    SfeAdditionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    , FormsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatCheckboxModule
-    , MatFormFieldModule
-    , MatInputModule
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
