@@ -11,26 +11,32 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { LeafletModule } from '@bluehalo/ngx-leaflet';
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
+import { DchMapComponent } from './dch-map/dch-map.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
-    TjsMultiplicationComponent,
-    SfeAdditionComponent,
+    AppComponent
+    , PizzaToppingsComponent
+    , TjsMultiplicationComponent
+    , SfeAdditionComponent
+    , DchMapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatInputModule,
-    MatFormFieldModule,
+    AppRoutingModule
+    , FormsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    , MatFormFieldModule
+    , MatInputModule
+    , LeafletModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
