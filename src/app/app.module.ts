@@ -53,6 +53,26 @@ import { DchMapComponent } from './dch-map/dch-map.component';
     LeafletModule,
     MatProgressSpinner,
     MatFormField,
+  ]
+})
+import { NumProductsComponent } from './num-products/num-products.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+@NgModule({
+  declarations: [
+    AppComponent
+    , PizzaToppingsComponent, NumProductsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+    , FormsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    ,MatInputModule
+    ,MatFormFieldModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
