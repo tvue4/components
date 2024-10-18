@@ -37,6 +37,7 @@ import { NumProductsComponent } from './num-products/num-products.component';
     SfeAdditionComponent,
     DchMapComponent,
     DmwAdditionComponent,
+    NumProductsComponent
   ],
   imports: [
     BrowserModule,
