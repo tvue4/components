@@ -40,7 +40,9 @@ import { DchMapComponent } from './dch-map/dch-map.component';
     , FormsModule
     , MatCardModule
     , MatButtonModule
+    , MatDatepickerModule
     , MatCheckboxModule
+    , MatNativeDateModule
     , MatFormFieldModule
     , MatInputModule
   ],
