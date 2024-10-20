@@ -27,6 +27,7 @@ import { LeafletModule } from '@bluehalo/ngx-leaflet';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
+import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DchMapComponent } from './dch-map/dch-map.component';
     SfeAdditionComponent,
     DchMapComponent,
     DmwAdditionComponent,
+    PizzaCalculatorComponent,
   ],
   imports: [
     BrowserModule,
