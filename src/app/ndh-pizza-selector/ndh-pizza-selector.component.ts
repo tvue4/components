@@ -18,8 +18,8 @@ interface PizzaCrust {
 })
 export class NdhPizzaSelectorComponent implements OnInit {
 
-  sizePrice: number = 5;
-  crustPrice: number = 2;
+  sizePrice: number = 0;
+  crustPrice: number = 0;
   toppingsPrice: number = 0;
   totalPrice: number = 0;
   errorAlert: string = '';
