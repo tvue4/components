@@ -3,13 +3,11 @@ import { Component } from '@angular/core';
 interface PizzaSize {
   name: string;
   price: number;
-  checked: boolean;
 }
 
 interface PizzaCrust {
   name: string;
   price: number;
-  checked: boolean;
 }
 
 @Component({
@@ -19,31 +17,22 @@ interface PizzaCrust {
 })
 export class NdhPizzaSelectorComponent {
 
-  pizzaCrusts: PizzaCrust[] = [
-    { name: 'Thin', price: 5.00, checked: false }
-    , { name: 'Regular', price: 5.00, checked: false }
-    , { name: 'Stuffed', price: 5.00, checked: false }
+  pizzaSizes: PizzaSize[] = [
+    { name: 'Small', price: 5.00 }
+    , { name: 'Medium', price: 7.50 }
+    , { name: 'Large', price: 10.00 }
   ];
 
-  get totalPrice() {
-    let sizePrice = this.pizzaCrusts
-    .filter(
-      x => x.checked
-    )
-    .reduce(
-      (acc, x) => acc + x.price
-      , 0
-    )
-  ;
-    let crustPrice = this.pizzaCrusts
-      .filter(
-        x => x.checked
-      )
-      .reduce(
-        (acc, x) => acc + x.price
-        , 0
-      )
-    ;
-      return sizePrice + crustPrice;
+  pizzaCrusts: PizzaCrust[] = [
+    { name: 'Thin', price: 2.00 }
+    , { name: 'Regular', price: 3.00 }
+    , { name: 'Stuffed', price: 4.00 }
+  ];
+
+  sizePrice: number = 5;
+  crustPrice: number = 2;
+
+  get pizzaTotalPrice() {
+    return this.sizePrice + this.crustPrice;
   }
 }
