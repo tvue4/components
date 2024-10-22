@@ -16,17 +16,17 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormField } from '@angular/material/input';
+import "@angular/compiler";
 
 import { ToggleImageComponent } from './toggle-image/toggle-image.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
-
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
+import { NumProductsComponent } from './num-products/num-products.component';
 import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
@@ -40,6 +40,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     SfeAdditionComponent,
     DchMapComponent,
     DmwAdditionComponent,
+    NumProductsComponent,
     PizzaCalculatorComponent,
     TjsAdditionComponent
   ],
@@ -57,6 +58,22 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     LeafletModule,
     MatProgressSpinner,
     MatFormField,
+  ]
+})
+@NgModule({
+  declarations: [
+    AppComponent
+    , PizzaToppingsComponent, NumProductsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+    , FormsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    ,MatInputModule
+    ,MatFormFieldModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
