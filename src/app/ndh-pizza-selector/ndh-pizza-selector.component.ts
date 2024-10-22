@@ -36,9 +36,9 @@ export class NdhPizzaSelectorComponent implements OnInit {
   }
 
   pizzaSizes: PizzaSize[] = [
-    { name: 'Small', price: 5.00 }
-    , { name: 'Medium', price: 7.50 }
-    , { name: 'Large', price: 10.00 }
+    { name: 'Small', price: 8.00 }
+    , { name: 'Medium', price: 10.00 }
+    , { name: 'Large', price: 12.00 }
   ];
 
   pizzaCrusts: PizzaCrust[] = [
