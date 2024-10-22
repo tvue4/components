@@ -46,7 +46,7 @@ export class PizzaToppingsComponent implements OnInit {
         , 0
       )
     ;
-    this.pizzaSvc.setToppingPrice(toppingsPrice);
+    this.pizzaSvc.updateToppingPrice(toppingsPrice);
     return toppingsPrice;
   }
 

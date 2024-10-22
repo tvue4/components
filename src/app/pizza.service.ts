@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PizzaService {
 
-  private toppingsPrice: number = 0;
+  private toppingsPriceSource = new BehaviorSubject<number>(0);
+  toppingsPrice$ = this.toppingsPriceSource.asObservable();
 
   constructor() { }
 
@@ -33,11 +35,11 @@ export class PizzaService {
     return toppingsFromWebService;
   }
 
-  setToppingPrice(price: number) {
-    this.toppingsPrice = price;
+  updateToppingPrice(price: number) {
+    this.toppingsPriceSource.next(price);
   }
 
   getToppingsPrice(): number {
-    return this.toppingsPrice;
+    return this.toppingsPriceSource.getValue();
   }
 }

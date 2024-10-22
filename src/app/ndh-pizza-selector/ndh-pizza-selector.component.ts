@@ -20,13 +20,19 @@ export class NdhPizzaSelectorComponent implements OnInit {
 
   sizePrice: number = 5;
   crustPrice: number = 2;
+  toppingsPrice: number = 0;
+  totalPrice: number = 0;
   errorAlert: string = '';
 
   constructor(private pizzaSvc: PizzaService) {}
 
   ngOnInit(): void {
-    this.pizzaTotalPrice;
-    this.checkToppings();
+    this.pizzaSvc.toppingsPrice$.subscribe(price=> {
+      this.toppingsPrice = price;
+      this.pizzaTotalPrice;
+      this.checkToppings();
+    })
+
   }
 
   pizzaSizes: PizzaSize[] = [
