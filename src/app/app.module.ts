@@ -16,6 +16,7 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormField } from '@angular/material/input';
+import "@angular/compiler";
 
 import { ToggleImageComponent } from './toggle-image/toggle-image.component';
 import { MatGridListModule } from '@angular/material/grid-list';
