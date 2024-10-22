@@ -10,7 +10,7 @@
             <mat-radio-group
                 aria-label="Select an option"
                 [(ngModel)]="sizePrice"
-                (valueChange)="pizzaTotalPrice"
+                (change)="checkToppings()"
             >
                 @for (pizzaSize of pizzaSizes; track pizzaSize) {
                     <mat-radio-button [value]="pizzaSize.price">{{ pizzaSize.name }}</mat-radio-button>
@@ -24,13 +24,16 @@
                 <mat-label>Crust Size</mat-label>
                 <mat-select
                     [(ngModel)]="crustPrice"
-                    (valueChange)="pizzaTotalPrice"
+                    (valueChange)="checkToppings()"
                 >
                     @for (pizzaCrust of pizzaCrusts; track pizzaCrust) {
                         <mat-option [value]="pizzaCrust.price">{{pizzaCrust.name}}</mat-option>
                     }
                 </mat-select>
             </mat-form-field>
+            <p>
+                {{ errorAlert }}
+            </p>
             <h3>
                 Total: {{ pizzaTotalPrice | currency }}
             </h3>
