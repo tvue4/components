@@ -25,9 +25,9 @@
             <mat-form-field>
                 <mat-label>Crust Size</mat-label>
                 <mat-select>
-                    <mat-option value="thin">Thin</mat-option>
-                    <mat-option value="regular">Regular</mat-option>
-                    <mat-option value="stuffed">Stuffed</mat-option>
+                    @for (pizzaCrust of pizzaCrusts; track pizzaCrust) {
+                        <mat-option [value]="pizzaCrust.price">{{pizzaCrust.name}}</mat-option>
+                    }
                 </mat-select>
             </mat-form-field>
 
