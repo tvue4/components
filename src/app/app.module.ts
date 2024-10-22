@@ -11,6 +11,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelect } from '@angular/material/select';
+import { MatOption } from '@angular/material/select';
 import { DmwAdditionComponent } from './dmw-addition/dmw-addition.component';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
@@ -29,6 +32,7 @@ import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
 import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
 import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
+
 
 @NgModule({
   declarations: [
@@ -56,7 +60,10 @@ import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-select
     MatInputModule,
     LeafletModule,
     MatProgressSpinner,
-    MatFormField,
+    MatFormField
+    , MatRadioModule
+    , MatSelect
+    , MatOption
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

@@ -1,1 +1,36 @@
-<p>ndh-pizza-selector works!</p>
+<mat-card>
+    <br>
+    <mat-card-title>
+        Pizza Selector
+    </mat-card-title>
+    <mat-card-content>
+        <br>
+        <mat-card>
+            <p><b>Select Pizza Size</b></p>
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button
+                    value="small"
+                >Small</mat-radio-button>
+                <mat-radio-button
+                    value="medium"
+                >Medium</mat-radio-button>
+                <mat-radio-button
+                    value="large"
+                >Large</mat-radio-button>
+            </mat-radio-group>
+        </mat-card>
+        <br>
+        <mat-card>
+            <p><b>Select Pizza Crust</b></p>
+            <mat-form-field>
+                <mat-label>Crust Size</mat-label>
+                <mat-select>
+                    <mat-option value="thin">Thin</mat-option>
+                    <mat-option value="regular">Regular</mat-option>
+                    <mat-option value="stuffed">Stuffed</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </mat-card>
+    </mat-card-content>
+</mat-card>
