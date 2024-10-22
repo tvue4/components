@@ -33,6 +33,7 @@ import { DchMapComponent } from './dch-map/dch-map.component';
 import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
 import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
 
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-select
     DmwAdditionComponent,
     PizzaCalculatorComponent,
     NdhPizzaSelectorComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule,
