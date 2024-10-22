@@ -27,6 +27,8 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
 import { NumProductsComponent } from './num-products/num-products.component';
+import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { NumProductsComponent } from './num-products/num-products.component';
     SfeAdditionComponent,
     DchMapComponent,
     DmwAdditionComponent,
-    NumProductsComponent
+    NumProductsComponent,
+    PizzaCalculatorComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule,
