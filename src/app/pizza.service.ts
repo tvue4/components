@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class PizzaService {
 
+  private toppingsPrice: number = 0;
+
   constructor() { }
 
   getPizzaToppingsFromTheCloud() {
@@ -28,7 +30,14 @@ export class PizzaService {
 
       }
     ];
-
     return toppingsFromWebService;
+  }
+
+  setToppingPrice(price: number) {
+    this.toppingsPrice = price;
+  }
+
+  getToppingsPrice(): number {
+    return this.toppingsPrice;
   }
 }
