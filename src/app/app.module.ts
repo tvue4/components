@@ -28,6 +28,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
 import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
+import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.co
     DchMapComponent,
     DmwAdditionComponent,
     PizzaCalculatorComponent,
+    NdhPizzaSelectorComponent,
   ],
   imports: [
     BrowserModule,
