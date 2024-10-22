@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 interface PizzaSize {
   name: string;
@@ -15,7 +16,16 @@ interface PizzaCrust {
   templateUrl: './ndh-pizza-selector.component.html',
   styleUrl: './ndh-pizza-selector.component.css'
 })
-export class NdhPizzaSelectorComponent {
+export class NdhPizzaSelectorComponent implements OnInit {
+
+  sizePrice: number = 5;
+  crustPrice: number = 2;
+
+  constructor(private pizzaSvc: PizzaService) {}
+
+  ngOnInit(): void {
+      this.pizzaTotalPrice;
+  }
 
   pizzaSizes: PizzaSize[] = [
     { name: 'Small', price: 5.00 }
@@ -29,10 +39,8 @@ export class NdhPizzaSelectorComponent {
     , { name: 'Stuffed', price: 4.00 }
   ];
 
-  sizePrice: number = 5;
-  crustPrice: number = 2;
-
   get pizzaTotalPrice() {
-    return this.sizePrice + this.crustPrice;
+    const toppingsPrice = this.pizzaSvc.getToppingsPrice();
+    return this.sizePrice + this.crustPrice + toppingsPrice;
   }
 }
