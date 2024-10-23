@@ -40,7 +40,6 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     AppComponent,
     PizzaToppingsComponent,
     ToggleImageComponent,
-    PizzaToppingsComponent,
     TjsMultiplicationComponent,
     SfeAdditionComponent,
     DchMapComponent,
