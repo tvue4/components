@@ -23,13 +23,12 @@ import { MatFormField } from '@angular/material/input';
 import { ToggleImageComponent } from './toggle-image/toggle-image.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
-
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
+import { NumProductsComponent } from './num-products/num-products.component';
 import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
 import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
 
@@ -44,6 +43,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     SfeAdditionComponent,
     DchMapComponent,
     DmwAdditionComponent,
+    NumProductsComponent,
     PizzaCalculatorComponent,
     NdhPizzaSelectorComponent,
     TjsAdditionComponent
@@ -66,6 +66,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     , MatSelect
     , MatOption
   ],
+
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
