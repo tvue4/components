@@ -33,6 +33,7 @@ import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.co
 import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
 
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { SkaAdditionComponent } from './ska-addition/ska-addition.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     NumProductsComponent,
     PizzaCalculatorComponent,
     NdhPizzaSelectorComponent,
-    TjsAdditionComponent
+    TjsAdditionComponent,
+    SkaAdditionComponent
   ],
   imports: [
     BrowserModule,
