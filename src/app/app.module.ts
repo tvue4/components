@@ -13,23 +13,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TsAdditionComponent } from './ts-addition/ts-addition.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
-
-
-// import { LeafletModule } from '@bluehalo/ngx-leaflet';
+import { MatInputModule } from '@angular/material/input';
+import { LeafletModule } from '@bluehalo/ngx-leaflet';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
+
 
 @NgModule({
   declarations: [
     AppComponent
     , PizzaToppingsComponent
     , TsAdditionComponent
-    , PizzaToppingsComponent
     , TjsMultiplicationComponent
     , SfeAdditionComponent
     , DchMapComponent
@@ -45,7 +43,9 @@ import { DchMapComponent } from './dch-map/dch-map.component';
     , MatNativeDateModule
     , MatFormFieldModule
     , MatInputModule
+    , LeafletModule
   ],
+
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
