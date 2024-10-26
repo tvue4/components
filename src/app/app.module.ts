@@ -11,12 +11,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelect } from '@angular/material/select';
+import { MatOption } from '@angular/material/select';
 import { DmwAdditionComponent } from './dmw-addition/dmw-addition.component';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormField } from '@angular/material/input';
-import "@angular/compiler";
 
 import { ToggleImageComponent } from './toggle-image/toggle-image.component';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -28,6 +30,8 @@ import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
 import { NumProductsComponent } from './num-products/num-products.component';
 import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.component';
+import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
+
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
@@ -35,13 +39,13 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     AppComponent,
     PizzaToppingsComponent,
     ToggleImageComponent,
-    PizzaToppingsComponent,
     TjsMultiplicationComponent,
     SfeAdditionComponent,
     DchMapComponent,
     DmwAdditionComponent,
     NumProductsComponent,
     PizzaCalculatorComponent,
+    NdhPizzaSelectorComponent,
     TjsAdditionComponent
   ],
   imports: [
@@ -57,24 +61,12 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     MatInputModule,
     LeafletModule,
     MatProgressSpinner,
-    MatFormField,
-  ]
-})
-@NgModule({
-  declarations: [
-    AppComponent
-    , PizzaToppingsComponent, NumProductsComponent
+    MatFormField
+    , MatRadioModule
+    , MatSelect
+    , MatOption
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-    , FormsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatCheckboxModule
-    ,MatInputModule
-    ,MatFormFieldModule
-  ],
+
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
