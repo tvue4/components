@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
+import { FormsModule } from '@angular/forms';
+import { from } from 'rxjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,6 +15,7 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
