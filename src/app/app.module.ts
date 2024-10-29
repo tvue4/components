@@ -36,7 +36,6 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
 
-import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +50,11 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     PizzaCalculatorComponent,
     NdhPizzaSelectorComponent,
     TjsAdditionComponent
+    , PizzaToppingsComponent
+    , TsAdditionComponent
+    , TjsMultiplicationComponent
+    , SfeAdditionComponent
+    , DchMapComponent
   ],
   imports: [
     BrowserModule,
