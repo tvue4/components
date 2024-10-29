@@ -35,6 +35,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
+import { SkaAdditionComponent } from './ska-addition/ska-addition.component'
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { DchMapComponent } from './dch-map/dch-map.component';
     , TjsMultiplicationComponent
     , SfeAdditionComponent
     , DchMapComponent
+    , SkaAdditionComponent
   ],
   imports: [
     BrowserModule,
