@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
 import { FormsModule } from '@angular/forms';
+import { FeeDeliveryComponent } from './fee-delivery/fee-delivery.component';
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent
+    , PizzaToppingsComponent, FeeDeliveryComponent
   ],
   imports: [
     BrowserModule,
