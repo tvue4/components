@@ -36,6 +36,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
 import { SkaAdditionComponent } from './ska-addition/ska-addition.component'
+import { CommentBoxComponent } from './comment-box/comment-box.component';
 
 
 @NgModule({
