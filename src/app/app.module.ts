@@ -57,6 +57,9 @@ import { SkaAdditionComponent } from './ska-addition/ska-addition.component'
     , SfeAdditionComponent
     , DchMapComponent
     , SkaAdditionComponent
+    TjsAdditionComponent,
+    CommentBoxComponent
+
   ],
   imports: [
     BrowserModule,
