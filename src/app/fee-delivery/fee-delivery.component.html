@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>
+        Dawda's Pick Up Or Delivery
+    </mat-card-title>
+    <mat-card-content>
+        <p>Choose your service option:</p>
+        <div class="button-group">
+          <button mat-raised-button color="primary" 
+                    (click)="selectOption('Pick Up')">
+            Pick Up
+          </button>
+          <button 
+                mat-raised-button color="accent" 
+                    (click)="selectOption('Delivery')">
+                Delivery
+          </button>
+        </div>
+    </mat-card-content>
+</mat-card>
