@@ -59,8 +59,8 @@ import { CommentBoxComponent } from './comment-box/comment-box.component';
     , SfeAdditionComponent
     , DchMapComponent
     , SkaAdditionComponent
-    TjsAdditionComponent,
-    CommentBoxComponent
+    , TjsAdditionComponent
+    , CommentBoxComponent
 
   ],
   imports: [
@@ -76,21 +76,23 @@ import { CommentBoxComponent } from './comment-box/comment-box.component';
     MatInputModule,
     LeafletModule,
     MatProgressSpinner,
-    MatFormField
-    , MatRadioModule
-    , MatSelect
-    , MatOption
-    , AppRoutingModule
-    , FormsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatDatepickerModule
-    , MatCheckboxModule
-    , MatNativeDateModule
-    , MatFormFieldModule
-    , MatInputModule
-    , LeafletModule
+    MatFormField,
+    MatRadioModule,
+    MatSelect,
+    MatOption,
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatInputModule,
+    LeafletModule,
+  
   ],
+
 
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
