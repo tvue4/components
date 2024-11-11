@@ -36,7 +36,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { SfeAdditionComponent } from './sfe-addition/sfe-addition.component';
 import { DchMapComponent } from './dch-map/dch-map.component';
-import { SkaAdditionComponent } from './ska-addition/ska-addition.component'
+import { SkaAdditionComponent } from './ska-addition/ska-addition.component';
+import { FeeDeliveryComponent } from './fee-delivery/fee-delivery.component';
 import { CommentBoxComponent } from './comment-box/comment-box.component';
 
 
@@ -60,8 +61,8 @@ import { CommentBoxComponent } from './comment-box/comment-box.component';
     , DchMapComponent
     , SkaAdditionComponent
     , TjsAdditionComponent
+    , FeeDeliveryComponent
     , CommentBoxComponent
-
   ],
   imports: [
     BrowserModule,
