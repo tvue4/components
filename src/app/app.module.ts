@@ -22,7 +22,6 @@ import { PizzaCalculatorComponent } from './pizza-calculator/pizza-calculator.co
 import { NdhPizzaSelectorComponent } from './ndh-pizza-selector/ndh-pizza-selector.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
-
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -41,7 +40,6 @@ import { FeeDeliveryComponent } from './fee-delivery/fee-delivery.component';
 import { CommentBoxComponent } from './comment-box/comment-box.component';
 import { AoAdditionComponent } from './ao-addition/ao-addition.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,16 +52,17 @@ import { AoAdditionComponent } from './ao-addition/ao-addition.component';
     NumProductsComponent,
     PizzaCalculatorComponent,
     NdhPizzaSelectorComponent,
-    TjsAdditionComponent
-    , PizzaToppingsComponent
-    , TsAdditionComponent
-    , TjsMultiplicationComponent
-    , SfeAdditionComponent
-    , DchMapComponent
-    , SkaAdditionComponent
-    , TjsAdditionComponent
-    , FeeDeliveryComponent
-    , CommentBoxComponent, AoAdditionComponent
+    TjsAdditionComponent,
+    PizzaToppingsComponent,
+    TsAdditionComponent,
+    TjsMultiplicationComponent,
+    SfeAdditionComponent,
+    DchMapComponent,
+    SkaAdditionComponent,
+    TjsAdditionComponent,
+    FeeDeliveryComponent,
+    CommentBoxComponent,
+    AoAdditionComponent,
   ],
   imports: [
     BrowserModule,
@@ -92,9 +91,7 @@ import { AoAdditionComponent } from './ao-addition/ao-addition.component';
     MatFormFieldModule,
     MatInputModule,
     LeafletModule,
-  
   ],
-
 
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
