@@ -39,6 +39,7 @@ import { DchMapComponent } from './dch-map/dch-map.component';
 import { SkaAdditionComponent } from './ska-addition/ska-addition.component';
 import { FeeDeliveryComponent } from './fee-delivery/fee-delivery.component';
 import { CommentBoxComponent } from './comment-box/comment-box.component';
+import { AoAdditionComponent } from './ao-addition/ao-addition.component';
 
 
 @NgModule({
@@ -62,7 +63,7 @@ import { CommentBoxComponent } from './comment-box/comment-box.component';
     , SkaAdditionComponent
     , TjsAdditionComponent
     , FeeDeliveryComponent
-    , CommentBoxComponent
+    , CommentBoxComponent, AoAdditionComponent
   ],
   imports: [
     BrowserModule,
