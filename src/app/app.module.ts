@@ -12,11 +12,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TtySizesAmountComponent } from './tty-sizes-amount/tty-sizes-amount.component';
+import { MatRadioButton } from '@angular/material/radio';
+import { MatRadioGroup } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent, TtySizesAmountComponent
+    , PizzaToppingsComponent
+    , TtySizesAmountComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,8 @@ import { TtySizesAmountComponent } from './tty-sizes-amount/tty-sizes-amount.com
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatRadioButton
+    , MatRadioGroup
   ],
   providers: [
     provideAnimationsAsync()
