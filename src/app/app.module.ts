@@ -76,15 +76,7 @@ import { AoAdditionComponent } from './ao-addition/ao-addition.component';
     , MatButtonModule
     , MatCheckboxModule
     , MatRadioButton
-    , MatRadioGroup
-
-
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
+    , MatRadioGroup,
     MatCheckboxModule,
     MatGridListModule,
     MatIconModule,
