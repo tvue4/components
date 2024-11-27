@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TtySizesComponent } from './tty-sizes/tty-sizes.component';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TtySizesComponent } from './tty-sizes/tty-sizes.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatRadioModule
   ],
   providers: [
     provideAnimationsAsync()
