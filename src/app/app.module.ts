@@ -25,6 +25,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TtySizesComponent } from './tty-sizes/tty-sizes.component';
 import { TsAdditionComponent } from './ts-addition/ts-addition.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -40,10 +41,12 @@ import { FeeDeliveryComponent } from './fee-delivery/fee-delivery.component';
 import { CommentBoxComponent } from './comment-box/comment-box.component';
 import { AoAdditionComponent } from './ao-addition/ao-addition.component';
 
+
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
+    AppComponent
+    , PizzaToppingsComponent, 
+    TtySizesComponent, 
     ToggleImageComponent,
     TjsMultiplicationComponent,
     SfeAdditionComponent,
@@ -66,11 +69,12 @@ import { AoAdditionComponent } from './ao-addition/ao-addition.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
+    AppRoutingModule
+    , FormsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    , MatRadioModule,
     MatGridListModule,
     MatIconModule,
     MatFormFieldModule,
@@ -78,7 +82,6 @@ import { AoAdditionComponent } from './ao-addition/ao-addition.component';
     LeafletModule,
     MatProgressSpinner,
     MatFormField,
-    MatRadioModule,
     MatSelect,
     MatOption,
     AppRoutingModule,
