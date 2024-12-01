@@ -1,1 +1,12 @@
-<p>pizza-toppings works!</p>
+<h2>Available Pizza Toppings</h2>
+<div
+    *ngFor="let topping of availablePizzaToppings"
+>
+    <label>
+        <input
+            type="checkbox"
+            [(ngModel)]="topping.checked"
+        >
+        {{ topping.name }} ({{ topping.price | currency }})
+    </label>
+</div>
