@@ -6,7 +6,16 @@
         <input
             type="checkbox"
             [(ngModel)]="topping.checked"
-        >
+        />
         {{ topping.name }} ({{ topping.price | currency }})
     </label>
 </div>
+<br>
+<button
+    (click)="calculateTotal()"
+>
+    Calculate Topping Price
+</button>
+<h3>
+    Total: {{ totalPrice | currency}}
+</h3>
