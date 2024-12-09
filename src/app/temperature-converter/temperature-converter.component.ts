@@ -13,9 +13,9 @@ export class TemperatureConverterComponent {
   convertTemperature(): void {
     if (this.temperature !== null) {
       if (this.conversionType === 'fahrenheit') {
-        this.convertedTemperature = (this.temperature - 32) * 5/9;
+        this.convertedTemperature = parseFloat(((this.temperature - 32) * 5/9).toFixed(2));
       } else if (this.conversionType === 'celsius') {
-        this.convertedTemperature = (this.temperature * 9/5) + 32;
+        this.convertedTemperature = parseFloat(((this.temperature * 9/5) + 32).toFixed(2));
       }
     }
   }
