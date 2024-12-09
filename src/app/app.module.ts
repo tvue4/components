@@ -12,6 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { TemperatureConverterComponent } from './temperature-converter/temperatu
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
+    , MatRadioModule
   ],
   providers: [
     provideAnimationsAsync()
