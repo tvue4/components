@@ -37,7 +37,7 @@ export class PizzaToppingsComponent implements OnInit {
   }
 
   get totalPrice() {
-    return this.availablePizzaToppings
+    const toppingsPrice = this.availablePizzaToppings
       .filter(
         x => x.checked
       )
@@ -46,6 +46,8 @@ export class PizzaToppingsComponent implements OnInit {
         , 0
       )
     ;
+    this.pizzaSvc.updateToppingPrice(toppingsPrice);
+    return toppingsPrice;
   }
 
   checkAll = () => this.availablePizzaToppings = this.availablePizzaToppings.map(
