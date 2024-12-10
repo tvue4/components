@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>
+        <h2>Toppings View</h2>
+    </mat-card-title>
+    <div
+            *ngFor="let pt of ToppingsImage"
+        >
+            
+                <h4>
+                {{ pt.name }}
+                <mat-checkbox [(ngModel)]="pt.checked">
+                 
+                </mat-checkbox>
+                
+                </h4>
+               
+                <mat-grid-list cols="2" rowHeight="2:1">
+                <mat-grid-tile *ngIf="pt.checked">  <img id="toppImg" src="{{ pt.image }}">
+                </mat-grid-tile>
+                </mat-grid-list>
+
+                <!--Reseached *ngIf (it works as a show details button, if the boolean expression is true, it renders the element it has inside.)-->
+        </div>
+
+</mat-card>
