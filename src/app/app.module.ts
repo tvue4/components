@@ -25,6 +25,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
 import { TtySizesComponent } from './tty-sizes/tty-sizes.component';
 import { TsAdditionComponent } from './ts-addition/ts-addition.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -46,6 +47,7 @@ import { AoAdditionComponent } from './ao-addition/ao-addition.component';
   declarations: [
     AppComponent
     , PizzaToppingsComponent, 
+    TemperatureConverterComponent,
     TtySizesComponent, 
     ToggleImageComponent,
     TjsMultiplicationComponent,
